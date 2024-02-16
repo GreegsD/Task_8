@@ -1,0 +1,21 @@
+class Journal():
+    def __init__(self, title, publ, ISSN, page, states, photo, audience,edition):
+        self.title = title
+        self.publ = publ
+        self.ISSN = ISSN
+        self.page = page
+        self.states = states
+        self.photo = photo
+        
+class loudwire(Journal):
+    def __init__(self, title, publ, page, states, photo, website, genre, audience):
+        self.genre = genre
+        self.website = website
+        self.audience = audience
+    def inf(self):
+        print("Title: ", self.title)
+        print("Publisher: ", self.publ)
+        print("Genre: ", self.genre)
+        print("Website: ", self.website)
+        
+    
